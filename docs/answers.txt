@@ -1,0 +1,48 @@
+(a)  Please paste the console output you saved at the end of step 3.
+
+[master 1aa91dc] Updated project status, output git status to status.txt
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+ rewrite docs/status.txt (100%)
+
+(b)  How many commits have been done to the repository (not only by you, but
+by anyone) so far?.  Please write the git command you used to get this infor-
+mation (5 points)
+
+git rev-list --all --count
+12 commits so far
+
+(c)  When was the file .gitignore modified last?  Please write the git command you
+used to get this information (5 points)
+
+git log -- .gitignore
+Thu Sep 15 10:29:34 2016 -0400
+
+(d)  How many times was each of the files inside the src folder modified?  Please
+write the git command you used to get this information (5 points)
+
+
+
+(e)  What is the difference between
+git log
+and
+git status
+?  (5 points)
+
+git log allows you to look through past commits and states of the
+repository, whereas status displays the repository's current state
+
+(f)  What command would you use to see the commits where “RoleGame.java”
+was one of the commited files?  (5 points)
+
+Assuming we're starting in the root directory of the project,
+git log --follow -- src/edu/fsu/cs/cen4021/RoleGame.java
+
+(g)  What  command  would  you  use  to  see  the  commits  whose  commit  message
+contains the word “file”?  (5 points)
+
+git grep "file"
+
+(h)  What command would you use to see the commits made by “Alice” between
+09/01/2016 and 09/16/2016?  (5 points)
+
+git log --since="09/01/2016" --before="09/16/2016" --author="alice"

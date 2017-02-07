@@ -20,7 +20,17 @@ Thu Sep 15 10:29:34 2016 -0400
 (d)  How many times was each of the files inside the src folder modified?  Please
 write the git command you used to get this information (5 points)
 
+src/edu/fsu/cs/cen4021/RoleGame.java                    - 4 times
+src/edu/fsu/cs/cen4021/armory/BasicWeapon.java          - 1 time
+src/edu/fsu/cs/cen4021/armory/SimpleArrow.java          - 1 time
+src/edu/fsu/cs/cen4021/armory/SimpleAxe.java            - 1 time
+src/edu/fsu/cs/cen4021/armory/Sword.java                - 2 times
+src/edu/fsu/cs/cen4021/armory/SimpleMagicStaff.java     - 1 time
+src/edu/fsu/cs/cen4021/armory/Weapon.java               - 2 times
+src/edu/fsu/cs/cen4021/armory/WeaponFactory.java        - 3 times
 
+Used command git log --pretty=format: --name-only and had to
+manually count
 
 (e)  What is the difference between
 git log

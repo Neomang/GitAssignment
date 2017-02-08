@@ -34,6 +34,10 @@ public class RoleGame {
         System.out.println("AncientMagicStaff has " + ancient_staff.hit() + " of damage.");
         System.out.println("AncientMagicStaff was able to do " + ancient_staff.hit(armor) + " of damage due to an armor with " + armor + " points.");
 
+        Weapon web_arrow = WeaponFactory.getWeapon("webritualarrow");
+        System.out.println("WebRitualArrow has " + web_arrow.hit() + " of damage.");
+        System.out.println("WebRitualArrow was able to do " + web_arrow.hit(armor) + " of damage due to an armor with " + armor + " points.");
+
         //TODO: Add the remaining weapons here
 
     }
